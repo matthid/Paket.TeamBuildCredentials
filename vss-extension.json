@@ -1,0 +1,49 @@
+{
+    "manifestVersion": 1,
+    "id": "paket-credential-manager",
+    "name": "Paket Credential Manager",
+    "version": "0.1.1",
+    "publisher": "matthid",
+    "targets": [
+        {
+            "id": "Microsoft.VisualStudio.Services"
+        }
+    ],    
+    "description": "Tasks to help accessing internal NuGet feeds with the Paket command line tool.",
+    "categories": [
+        "Build and release"
+    ],
+    "icons": {   
+      "default": "extension-icon.png" 
+    },
+    "files": [
+        {
+            "path": "paketcredentialcleanup"
+        },
+        {
+            "path": "setpaketcredentialprovider"
+        }
+    ],
+    "contributions": [
+        {
+            "id": "set-paket-credential-manager",
+            "type": "ms.vss-distributed-task.task",
+            "targets": [
+                "ms.vss-distributed-task.tasks"
+            ],
+            "properties": {
+                "name": "setpaketcredentialprovider"
+            }
+        },
+        {
+            "id": "cleanup-paket-credential-manager",
+            "type": "ms.vss-distributed-task.task",
+            "targets": [
+                "ms.vss-distributed-task.tasks"
+            ],
+            "properties": {
+                "name": "paketcredentialcleanup"
+            }
+        }
+    ]
+}

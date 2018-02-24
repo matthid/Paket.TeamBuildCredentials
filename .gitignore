@@ -1,0 +1,15 @@
+
+node_modules
+*.js
+*.vsix
+.fake
+
+*.pdb
+.taskkey
+
+SetPaketCredentialProvider.dev/CredentialProvider
+SetPaketCredentialProvider/
+PaketCredentialCleanup/
+CredentialProvider.PaketTeamBuild/bin
+
+obj/
