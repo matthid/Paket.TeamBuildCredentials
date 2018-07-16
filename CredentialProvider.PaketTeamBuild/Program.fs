@@ -41,8 +41,8 @@ let main argv =
         if not isResponsible then
             printfn """
 { "Message"  : "%s" }""" "This credential provider only serves teamfoundation or vsts links (check 'SYSTEM_TEAMFOUNDATIONCOLLECTIONURI' environment variable!)."
-            2
-        else        
+            1
+        else  
             if String.IsNullOrWhiteSpace(token) then
                 printErr("This credential provider must be run under the Team Build tasks for NuGet")
                 1

@@ -2,8 +2,8 @@
     "manifestVersion": 1,
     "id": "paket-credential-manager",
     "name": "Paket Credential Manager",
-    "version": "0.2.0",
-    "publisher": "matthid",
+    "version": "0.2.1",
+    "publisher": "mad",
     "targets": [
         {
             "id": "Microsoft.VisualStudio.Services"
